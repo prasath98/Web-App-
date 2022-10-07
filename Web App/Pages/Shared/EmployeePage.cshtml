@@ -1,0 +1,44 @@
+﻿@page "/Employee"
+@model Web_App.Pages.Shared.EmployeePageModel
+@{
+}
+
+@*<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></Script>*@
+
+ <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<div>Login Page</div>
+<table>
+    <thead>
+        <tr>
+            <th>
+               Name
+            </th>
+             <th>
+              <input type="text" id="username" name="name">
+            </th>
+         </tr>
+         <tr>
+            <th>
+               Password
+            </th>
+             <th>
+              <input type="text" id="password" name="password">
+            </th>
+         </tr>
+         <tr>
+             <th>
+                 <input type="button" value="Login" class="btn" id="submit" onclick="login()">
+             </th>
+            
+        </tr>
+    </thead>
+        <tbody id="tdata">
+
+        </tbody>
+        </table>
+
+<script src="~/js/Login.js"></script>

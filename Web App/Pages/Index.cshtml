@@ -1,0 +1,80 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@*<div>
+    <form>
+        <table>
+            <tr>
+                <th>Employee Id</th>
+                <th><input type="text" id="employee_id" /></th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th><input type="text" id="name" /></th>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <th><input type="text" id="status" /></th>
+            </tr>
+            <tr>
+                <th>Manager</th>
+                <th><input type="text" id="manager" /></th>
+            </tr>
+            <tr>
+                <th>wfm manager</th>
+                <th><input type="text" id="wfm_Manager" /></th>
+            </tr>
+            <tr>
+                <th>email</th>
+                <th><input type="text" id="email" /></th>
+            <tr>
+                <th>lock Status</th>
+                <th><input type="text" id="lockstatus" /></th>
+            </tr>
+
+            <tr>
+                <th>Experience</th>
+                <th><input type="text" id="experience" /></th>
+            </tr>
+            <tr>
+                <th>
+                <td colspan="2" style="text-align=center">
+                    <button type="button" class="btn btn-dark" id="store">Add People</button>
+                </td>
+                </th>
+            </tr>
+        </table>
+    </form>
+</div>*@
+
+
+
+<div class="jumbotron">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>EmployeeId</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Manager</th>
+                <th>wfmmanager</th>
+                <th>email</th>
+                <th>lockStatus</th>
+                <th>Experience</th>
+                <th>ProfileId</th>
+                <th>Skills</th>
+            </tr>
+        </thead>
+        <tbody id="tdata">
+        </tbody>
+    </table>
+</div>
+<script src="~/js//apicall.js"></script>
